@@ -1,0 +1,9 @@
+// Hint files help the Visual Studio IDE interpret Visual C++ identifiers
+// such as names of functions and macros.
+// For more information see https://go.microsoft.com/fwlink/?linkid=865984
+#define GLAPI
+#define GLAPI __attribute__ ((dllexport)) extern
+#define GLAPI __declspec(dllexport) extern
+#define GLAPI __attribute__ ((dllimport)) extern
+#define GLAPI __declspec(dllimport) extern
+#define GLAPI __attribute__ ((visibility ("default"))) extern
